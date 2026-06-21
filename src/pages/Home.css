@@ -1,0 +1,32 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.welcome-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.welcome-content h1 {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .welcome-content h1 {
+    font-size: 32px;
+  }
+
+  .welcome-content p {
+    font-size: 16px;
+  }
+}
