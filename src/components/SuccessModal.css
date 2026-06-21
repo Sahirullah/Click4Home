@@ -32,7 +32,7 @@
 .success-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #E77B16 0%, #27569B 100%);
+  background: linear-gradient(135deg, #27569B 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -84,12 +84,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(231, 123, 22, 0.3);
+  box-shadow: 0 4px 15px  #E77B16;
 }
 
 .modal-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 123, 22, 0.4);
+  box-shadow: 0 6px 20px #E77B16;
 }
 
 .modal-btn:active {
