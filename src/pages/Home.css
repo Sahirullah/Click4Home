@@ -1,32 +1,204 @@
-.home-page {
-  min-height: 100vh;
+.services-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem 2rem;
+  margin: 0;
 }
 
-.welcome-section {
+.services-container {
   max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.welcome-content h1 {
-  font-size: 42px;
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
-.welcome-content p {
-  font-size: 18px;
+.service-card p {
   color: #666;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: #764ba2;
+  transform: scale(1.05);
+}
+
+/* Gallery Preview Section */
+.gallery-preview-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.gallery-preview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-preview-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-preview-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-preview-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-preview-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.see-more-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.see-more-btn {
+  background-color: #667eea;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.see-more-btn:hover {
+  background-color: #764ba2;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .welcome-content h1 {
-    font-size: 32px;
+  .services-section {
+    padding: 2rem 1rem;
   }
 
-  .welcome-content p {
-    font-size: 16px;
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .gallery-preview-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .gallery-preview-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-preview-item img {
+    height: 180px;
+  }
+
+  .see-more-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-preview-item img {
+    height: 200px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }
