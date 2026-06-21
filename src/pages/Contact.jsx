@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SuccessModal from '../components/SuccessModal';
 import './Pages.css';
 import './Contact.css';
 
@@ -8,6 +9,7 @@ export default function Contact() {
     email: '',
     message: '',
   });
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,8 +21,12 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you ${formData.name}! We will get back to you soon.`);
+    setShowModal(true);
     setFormData({ name: '', email: '', message: '' });
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   return (
