@@ -31,6 +31,7 @@ export default function Contact() {
 
   return (
     <div className="page">
+      <SuccessModal isOpen={showModal} name={formData.name} onClose={handleCloseModal} />
       <section className="content">
         <h1>Contact Us</h1>
         <p>We'd love to hear from you. Get in touch with us today!</p>
