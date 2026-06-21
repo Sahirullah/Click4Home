@@ -134,12 +134,26 @@
 }
 
 @media (max-width: 1024px) {
+  .services-section {
+    padding: 2.5rem 1.5rem;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
   }
 
   .gallery-preview-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-preview-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
   }
 }
 
@@ -158,11 +172,23 @@
   }
 
   .card-icon {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
   }
 
   .service-card h3 {
     font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-btn {
+    padding: 0.65rem 1.4rem;
+    font-size: 0.9rem;
   }
 
   .gallery-preview-section {
@@ -177,6 +203,7 @@
   .gallery-preview-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .gallery-preview-item img {
@@ -190,15 +217,60 @@
 }
 
 @media (max-width: 480px) {
+  .services-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .service-card {
+    padding: 1.2rem;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .gallery-preview-section {
+    padding: 2rem 1rem;
+  }
+
+  .gallery-preview-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
   .gallery-preview-grid {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .gallery-preview-item img {
     height: 200px;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
+  .see-more-btn {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
