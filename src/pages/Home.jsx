@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import HowItWorks from '../components/HowItWorks';
+import FAQ from '../components/FAQ';
 import { Link } from 'react-router-dom';
 import './Pages.css';
 import './Home.css';
@@ -80,10 +81,7 @@ export default function Home() {
 
       <HowItWorks />
 
-      <section className="content">
-        <h1>Welcome to Click4Home</h1>
-        <p>Discover your dream home with our premium house selling platform. Browse through our extensive collection of properties and find the perfect place for you.</p>
-      </section>
+      <FAQ />
     </div>
   );
 }
