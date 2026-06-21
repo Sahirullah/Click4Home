@@ -75,7 +75,7 @@
 }
 
 .modal-btn {
-  background: linear-gradient(135deg, #E77B16 0%, #27569B 100%);
+  background-color: #E77B16;
   color: white;
   border: none;
   padding: 0.85rem 2.5rem;
@@ -84,12 +84,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px  #E77B16;
+  box-shadow: 0 4px 15px rgba(39, 86, 155, 0.4);
 }
 
 .modal-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px #E77B16;
+  box-shadow: 0 6px 20px rgba(39, 86, 155, 0.5);
 }
 
 .modal-btn:active {
