@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import hero1 from '../assets/Hero-Section/1.jpg';
 import hero2 from '../assets/Hero-Section/2.jpg';
 import hero3 from '../assets/Hero-Section/3.jpg';
 import hero4 from '../assets/Hero-Section/4.jpg';
+import StatisticsCounter from './StatisticsCounter';
 import './HeroSection.css';
 
 const heroImages = [hero1, hero2, hero3, hero4];
@@ -40,12 +42,17 @@ export default function HeroSection() {
           &#10094;
         </button>
 
-        <div className="hero-images-wrapper">
-          <img
-            src={heroImages[currentIndex]}
-            alt={`Hero ${currentIndex + 1}`}
-            className="hero-image"
-          />
+        <div 
+          className="hero-images-wrapper"
+          style={{ backgroundImage: `url(${heroImages[currentIndex]})` }}
+        >
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>Find. Buy. Rent. Invest.</h1>
+              <p>Explore verified properties across Pakistan and make smarter real estate decisions today.</p>
+              <Link to="/gallery" className="explore-btn">Explore Now</Link>
+            </div>
+          </div>
         </div>
 
         <button className="arrow-btn right-arrow" onClick={handleNext}>
@@ -66,6 +73,8 @@ export default function HeroSection() {
           />
         ))}
       </div>
+
+      <StatisticsCounter />
     </section>
   );
 }

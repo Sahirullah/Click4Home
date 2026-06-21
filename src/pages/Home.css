@@ -50,7 +50,7 @@
 }
 
 .card-btn {
-  background-color: #667eea;
+  background-color: #E77B16;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -62,7 +62,7 @@
 }
 
 .card-btn:hover {
-  background-color: #764ba2;
+  background-color: #27569B;
   transform: scale(1.05);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .see-more-btn {
-  background-color: #667eea;
+  background-color: #E77B16;
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -129,7 +129,7 @@
 }
 
 .see-more-btn:hover {
-  background-color: #764ba2;
+  background-color: #27569B;
   transform: translateY(-3px);
 }
 

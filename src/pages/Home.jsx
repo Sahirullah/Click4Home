@@ -1,4 +1,6 @@
 import HeroSection from '../components/HeroSection';
+import WhyChooseUs from '../components/WhyChooseUs';
+import HowItWorks from '../components/HowItWorks';
 import { Link } from 'react-router-dom';
 import './Pages.css';
 import './Home.css';
@@ -73,6 +75,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WhyChooseUs />
+
+      <HowItWorks />
 
       <section className="content">
         <h1>Welcome to Click4Home</h1>
